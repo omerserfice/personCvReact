@@ -1,0 +1,39 @@
+  @font-face {
+    font-family: 'Barlow-Regular';
+    src: url("../../Assets/fonts/Barlow-Regular.ttf");
+  }
+  @font-face {
+    font-family: 'Helvetica-Bold';
+    src: url("../../Assets/fonts/Helvetica-Bold.ttf");
+  }
+  @font-face {
+    font-family: 'Helvetica';
+    src: url("../../Assets/fonts/Helvetica.ttf");
+  }
+  @font-face {
+    font-family: 'AnticSlab-Regular';
+    src: url("../../Assets/fonts/AnticSlab-Regular.ttf");
+  }
+header{
+  background-color: #30475E;
+  overflow: hidden;
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  z-index: 99; 
+}
+.nav-item a{
+   text-decoration: none;
+   color: #8fa4b3;
+   padding: 15px;
+   font-size: 15px;
+   font-family: 'Helvetica';
+}
+.navbar-brand{
+  font-family: 'AnticSlab-Regular';
+  font-size: 30px;
+}
+
+.nav-item a:hover{
+  color: azure;
+}

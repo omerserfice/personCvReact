@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'AnticSlab-Regular';
+    src: url("../../Assets/fonts/AnticSlab-Regular.ttf");
+  }
+  @font-face {
+    font-family: 'Barlow-Regular';
+    src: url("../../Assets/fonts/Barlow-Regular.ttf");
+  }
+  @font-face {
+    font-family: 'Barlow-Thin';
+    src: url("../../Assets/fonts/Barlow-Thin.ttf");
+  }
+body{
+  
+background-color: #D3DEDC;
+}
+ .banner{
+     padding-top: 1.4%;
+ }
+
+
+  /* .about-banner{
+      padding-top: 5.7%;
+  } */
+
+.about h5{
+    font-family: 'Barlow-Regular';
+    font-size: 25px;
+    font-weight: bold;
+    color: #30475E;
+}
+.about h6{
+    font-family: 'Barlow-Regular';
+    font-size: 25px;
+    color: #30475E;
+    padding-left: 2%;
+}
+
+.about p{
+    font-family: 'Barlow-Regular';
+    font-size: 15px;
+    color: #30475E;
+    padding-left: 2%;
+    
+}
+.img-thumbnail{
+    border:1px solid #30475E;
+    background-color: #30475E;
+}
+.row {
+  --bs-gutter-x: 0.5rem;
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) ,(max-width:740px) {
+  .banner{
+    padding-top: 12%;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .banner{
+    padding-top: 7%;
+  }
+  
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner{
+    padding-top: 9%;
+  }
+  
+}
+@media screen and (min-width: 540px) and (max-width: 720px) {
+  .banner{
+    padding-top: 12%;
+  }
+}

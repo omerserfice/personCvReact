@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url("../../Assets/fonts/Barlow-Regular.ttf");
+  }
+body{
+  
+    background-color: #D3DEDC;
+    font-family: 'Barlow-Regular';
+    }
+.contact-title{
+    padding-top: 15%;
+}
+
+.contact-title h5{
+    font-family: 'Barlow-Regular';
+    font-size: 25px;
+    font-weight: bold;
+    color: #30475E;
+}
+.contact-title p{
+    font-family: 'Barlow-Regular';
+    font-size: 20px;
+    color: #30475E;
+}
+.left{
+    box-shadow: 0 4px 2px -2px #30475E;
+}
+.icon{
+    margin-left: 2%;
+}
+.content{
+    font-family: 'Barlow-Regular';
+    font-size: 15px;
+    color: #30475E;
+}
+    
+    
+.left h6{
+    padding-top: 3%;
+    color: #F05454;
+    font-family: 'Barlow-Regular';
+    font-size: 19px;
+}
+
+.left ul li{
+    list-style-type:none;
+    
+}
+.left ul li p{
+    color: #30475E;
+    font-family: 'Barlow-Regular';
+}
+.right{
+    
+    
+    box-shadow: 0 4px 2px -2px #30475E;
+}
+
+
+.right h6{
+    padding-top: 3%;
+    color: #F05454;
+    font-family: 'Barlow-Regular';
+    font-size: 19px;
+}
+
+.input{
+    padding: 10px;
+    font-family: 'Barlow-Regular';
+    font-size: 15px;
+    margin:2%;
+}
+.input-name , .input-surname{
+    padding: 10px;
+    font-family: 'Barlow-Regular';
+    font-size: 15px;
+    margin:2%;
+    margin-left: 4%;
+}
+.button{
+   margin: 1.5%;
+   font-family: 'Barlow-Regular';
+}
+.btn-gonder{
+    margin:0.3%;
+    background-color: #30475E;
+}
+.btn-gonder:hover{
+    background-color: #30475E;
+}
+.btn-sil{
+    margin:0.3%;
+   
+}
+.message{
+    padding-left: 5%;
+    font-style: italic;
+    font-size: 13px;
+}
+.message2{
+    padding-left: 3%;
+    font-style: italic;
+    font-size: 13px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #30475E !important;
+    border-color: #F05454 !important;
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) ,(max-width:740px) {
+    .contact-title{
+      padding-top: 27%;
+    }
+  }
+  
+  @media screen and (min-width: 820px) and (max-width: 1180px) {
+    .contact-title{
+      padding-top: 15%;
+    }
+    
+    
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact-title{
+      padding-top: 17%;
+    }
+    
+  }
+  @media screen and (min-width: 540px) and (max-width: 720px) {
+    .contact-title{
+      padding-top: 20%;
+    }
+  }
+  

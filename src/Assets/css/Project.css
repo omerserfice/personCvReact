@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url("../../Assets/fonts/Barlow-Regular.ttf");
+  }
+body{
+    background-color: #D3DEDC;
+}
+.project{
+    padding-top: 10%;
+}
+.project h5{
+    font-family: 'Barlow-Regular';
+    font-size: 25px;
+    font-weight: bold;
+    color: #30475E;
+}
+.project p{
+    font-family: 'Barlow-Regular';
+    font-size: 15px;
+   
+    color: #30475E
+}
+
+.card{
+    box-shadow: 0 4px 2px -2px gray;
+    background-color: #f5f5f5;
+    
+}
+.card-title{
+   color: #30475E !important;
+}
+.card-text{
+    color: #30475E !important;
+}
+.card-body a{
+    text-decoration: none;
+    color: #f05454;
+   
+}
+.card{
+    width: 100%;
+    transition: 0.7s all ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+@media screen and (min-width: 375px) and (max-width: 667px) ,(max-width:740px) {
+    .project{
+      padding-top: 27%;
+    }
+  }
+  
+  @media screen and (min-width: 820px) and (max-width: 1180px) {
+    .project{
+      padding-top: 15%;
+    }
+    
+    
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .project{
+      padding-top: 17%;
+    }
+    
+  }
+  @media screen and (min-width: 540px) and (max-width: 720px) {
+    .project{
+      padding-top: 20%;
+    }
+  }
+
+  .project-detail{
+    padding-top: 10%;
+  }
+  /* .row h5{
+    font-family: 'Barlow-Regular';
+    font-size: 25px;
+    font-weight: bold;
+    color: #30475E;
+  } */
+  .project-detail-title{
+    font-family: 'Barlow-Regular';
+    font-size: 25px;
+    font-weight: bold;
+    color: #30475E;
+  }
+  .title{
+    font-family: 'Barlow-Regular';
+  }
+  .detail{
+    font-family: 'Barlow-Regular';
+    font-size: 15px;
+    color: #30475E;
+  }
+
+  

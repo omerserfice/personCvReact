@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'AnticSlab-Regular';
+    src: url("../../Assets/fonts/AnticSlab-Regular.ttf");
+  }
+  @font-face {
+    font-family: 'Parisienne-Regular';
+    src: url("../../Assets/fonts/Parisienne-Regular.ttf");
+  }
+  @font-face {
+    font-family: 'JustSignature';
+    src: url("../../Assets/fonts/JustSignature.ttf");
+  }
+  @font-face {
+    font-family: 'Helvetica';
+    src: url("../../Assets/fonts/Helvetica.ttf");
+  }
+  
+.footer{
+    background-color: #30475E;
+    color: white;
+    padding-left: 7%;
+    padding-right: 7%;
+    
+}
+.footer-text{
+    font-family: 'Helvetica';
+    text-align: center;
+    color: #7897AB;
+
+}
+.list-social h5{
+    color: #F05454;
+    font-family: 'Helvetica';
+    
+}
+.list-social ul li{
+    list-style-type:none;
+    text-align: center;
+    color: #7897AB;
+    font-family: 'Helvetica';
+}
+
+.list-social ul li a{
+    color: #7897AB;
+}
+.list-social ul li a:hover{
+    color: #f5f5f5;
+}
+
+.list-desc h5{
+    color: #F05454;
+    font-family: 'Helvetica';
+    
+}
+.list-desc p{
+    font-family: 'Helvetica';
+    color: #7897AB;
+}
+.list-desc ul li{
+    list-style-type:none;
+    text-align: center;
+    color: #7897AB;
+    font-family: 'Helvetica';
+}
+.list-contact h5{
+    color: #F05454;
+    font-family: 'Helvetica';
+    
+}
+.list-contact ul li{
+    list-style-type:none;
+    text-align: center;
+    color: #7897AB;
+    font-family: 'Helvetica';
+}
+.list-contact ul li a{
+    text-decoration: none;
+    color: #7897AB;
+}
+
+.list-contact ul li a:hover{
+    color: #f5f5f5;
+}
+
+.row{
+    bs-gutter-x: 0rem !important;
+    margin-right: calc(-0 * var(--bs-gutter-x)) !important;
+}
+
+.signature{
+    font-family: 'JustSignature';
+    color: #fff;
+}
+
