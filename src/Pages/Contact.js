@@ -9,10 +9,19 @@ import withReactContent from 'sweetalert2-react-content';
 import { useForm } from "react-hook-form";
 import MessageService from '../configs/services/MessageService';
 import { confirm } from '../SweetAlert/SweetAlert';
+import CustomBreadcrumb from '../Component/CustomBreadcrumb/CustomBreadcrumb';
 const Contact = () => {
   const [refresh, setRefresh] = useState(false);
   const MySwal = withReactContent(Swal)
-
+  const tags=[
+    {
+        page: "Anasayfa",
+        href : `/`
+    },
+    {
+        page: "İletişim",
+    },
+]
   const dispatch = useDispatch();
   const contactData = useSelector(state => state.contactReducers.contactData);
   
@@ -24,10 +33,6 @@ const Contact = () => {
     
   }, []);
   
-   
-
-  console.log("contact:", contactData);
-
 
   const onSubmit = (data) => {
 
@@ -37,7 +42,7 @@ const Contact = () => {
   }, async ()=>{
      
       return MessageService.addMessage(data).then(res=>{
-        console.log("res:",res);
+        
           return res;
       })
 
@@ -58,8 +63,10 @@ const Contact = () => {
     <>
       <div className='container'>
         <div className='contact-title'>
+        <CustomBreadcrumb  tagslength={tags.length} tags={tags}></CustomBreadcrumb>
+        <br />
           <h5>Bize Ulaşın!</h5>
-          <hr />
+          
           <p>Tüm soru görüş ve önerileriniz için bize mesaj atın...</p>
         </div>
         <div className='row'>
@@ -68,6 +75,7 @@ const Contact = () => {
               return (
                 <>
                   <div className='left col-md-5 col-sm-12 w-50 mb-4'>
+                  
                     <h6>İletişim Bilgileri</h6>
                     <hr></hr>
                     <div className='mt-4'>

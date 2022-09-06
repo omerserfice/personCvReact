@@ -1,1 +1,1 @@
-export const apiURL = "https://person.neoverde.istanbul/api"
+export const apiURL = "https://person.mkborsa.com/api"

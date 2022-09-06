@@ -4,7 +4,19 @@ import p1 from '../Assets/img/109666.jpg';
 import { useDispatch, useSelector } from 'react-redux';
 import {getProject} from '../Redux/actions/Project/action'
 import { GitHub } from 'react-feather';
+import { apiURL } from '../Redux/config';
+import CustomBreadcrumb from '../Component/CustomBreadcrumb/CustomBreadcrumb';
 const Project = () => {
+  const tags=[
+    {
+        page: "Anasayfa",
+        href : `/`
+    },
+    {
+        page: "Projeler",
+    },
+
+]
 
   const dispatch = useDispatch();
   const projectData = useSelector(state => state.projectReducers.projectData);
@@ -13,11 +25,12 @@ const Project = () => {
     dispatch(getProject())
   }, []);
 
-  console.log("project", projectData);
 
   return (
     <>
+      
       <div className='project container'>
+      <CustomBreadcrumb  tagslength={tags.length} tags={tags}></CustomBreadcrumb><br />
         <h5>Projelerim</h5>
         <hr />
         <p>Akademik öğrenim boyunca ve halen devam etmekte olan projelerim</p>
@@ -28,7 +41,7 @@ const Project = () => {
                 <>
                   <div className='col-lg-3 col-md-6 col-sm-6 col-xs-12 mt-4'>
                     <div className="card">
-                     <a href={`projectDetail/${item.id}`}> <img src={p1} className="card-img-top" alt="..."></img></a>
+                     <a href={`projectDetail/${item.id}`}> <img src={`${apiURL}/ProjectCoverImage/${item.id}`} className="card-img-top" alt="..."></img></a>
                       <div className="card-body">
                         <a href={`projectDetail/${item.id}`}><h5 className="card-title">{item.projectName}</h5></a>
                         <a href={`projectDetail/${item.id}`}><p className="card-text">{item.projectDetail.substring(0,45)}... <a href={`projectDetail/${item.id}`}><i>Devamını Gör</i></a></p></a> 

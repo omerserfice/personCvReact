@@ -1,0 +1,23 @@
+.my-breadcrumb{
+    color: gray;
+    font-family: "Helvetica";
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.my-breadcrumb:hover{
+    color: black;
+    background-color: inherit !important;
+}
+.breadcrumb-item.active{
+    color:black;
+}
+
+
+
+@font-face {
+    font-family: "Helvetica";
+    src: local("Helvetica"),
+      /* url("../../assets//fonts/Poppins-Regular.ttf") format("truetype"); */
+      url("../../Assets/fonts/Helvetica.ttf") format("truetype");
+  }

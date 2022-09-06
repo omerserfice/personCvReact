@@ -2,8 +2,18 @@ import React, { useState, useEffect } from 'react';
 import '../Assets/css/Ability.css'
 import getAbility from '../Redux/actions/Ability/action';
 import { useDispatch, useSelector } from 'react-redux';
-const Ability = () => {
+import CustomBreadcrumb from '../Component/CustomBreadcrumb/CustomBreadcrumb';
 
+const Ability = () => {
+    const tags=[
+        {
+            page: "Anasayfa",
+            href : `/`
+        },
+        {
+            page: "Yetenekler",
+        },
+    ]
     const dispatch = useDispatch();
     const abilityData = useSelector(state => state.abilityReducers.abilityData);
 
@@ -17,6 +27,7 @@ const Ability = () => {
     return (
         <>
             <div className='ability container'>
+            <CustomBreadcrumb  tagslength={tags.length} tags={tags}></CustomBreadcrumb><br />
                 <h5>Yeteneklerim ve İlgilendiğim Teknolojiler</h5>
                 <hr />
                 <div class="container">

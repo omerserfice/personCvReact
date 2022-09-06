@@ -2,7 +2,18 @@ import React, { useState, useEffect } from 'react';
 import '../Assets/css/Experience.css'
 import getExperience from '../Redux/actions/Experience/action';
 import { useDispatch, useSelector } from 'react-redux';
+import CustomBreadcrumb from '../Component/CustomBreadcrumb/CustomBreadcrumb';
 const Experience = () => {
+    const tags=[
+        {
+            page: "Anasayfa",
+            href : `/`
+        },
+        {
+            page: "Deneyimler",
+        },
+    
+    ]
     const [exLength, setexLength] = useState(0);
     const dispatch = useDispatch()
     const experienceData = useSelector(state => state.experienceReducers.experienceData)
@@ -15,18 +26,23 @@ const Experience = () => {
     return (
         <>
             <div class="experience container">
+            <CustomBreadcrumb  tagslength={tags.length} tags={tags}></CustomBreadcrumb>
+            <hr />
                 <h5>Deneyimlerim</h5>
-                <hr />
+            
                 <div class="row">
                     <div class="col-md-12">
                         <div class="main-timeline">
                             {
                                 experienceData.map((item, key) => {
+                                  
+                                 const date_ = item.startDateOfWork.toString().split("-")[0];
+                                 console.log(date_)
                                     return (
                                         <>
                                             <div key={key} class="timeline">
                                                 <div href="#" class="timeline-content">
-                                                    <span class="timeline-year">2017</span>
+                                                    <span class="timeline-year">{date_}</span>
                                                     <h3 class="title">{item.companyName}</h3>
                                                     <h4 className='title-dep'>{item.departman}</h4>
                                                     <p class="description">
